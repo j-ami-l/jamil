@@ -3,7 +3,6 @@ import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
 import mee from '../../public/me.png'
-import { LampContainer } from '../ui/lamp';
 import { Button } from '../ui/button';
 
 function About() {

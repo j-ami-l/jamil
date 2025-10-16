@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaUser, FaPhone, FaPaperPlane } from 'react-icons/fa';
 import { MdTask } from 'react-icons/md';
-import Image from 'next/image';
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -43,7 +42,7 @@ function Contact() {
             } else {
                 setSubmitStatus('error');
             }
-        } catch (error) {
+        } catch {
             setSubmitStatus('error');
         } finally {
             setIsSubmitting(false);
@@ -63,13 +62,13 @@ function Contact() {
                     className='text-center mb-16'
                 >
                     <h2 className='text-5xl lg:text-6xl font-bold text-white mb-4'>
-                        Let's{' '}
+                        Lets{' '}
                         <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>
                             Connect
                         </span>
                     </h2>
                     <p className='text-gray-400 text-lg max-w-2xl mx-auto'>
-                        Have a project in mind? Fill out the form and I'll get back to you soon!
+                        Have a project in mind? Fill out the form and I will get back to you soon!
                     </p>
                 </motion.div>
 
@@ -311,7 +310,7 @@ function Contact() {
                                         animate={{ opacity: 1, y: 0 }}
                                         className='p-4 bg-green-500/20 border border-green-500/50 rounded-xl text-green-400 text-center font-medium'
                                     >
-                                        ✓ Message sent successfully! I'll get back to you soon.
+                                        ✓ Message sent successfully! I will get back to you soon.
                                     </motion.div>
                                 )}
 

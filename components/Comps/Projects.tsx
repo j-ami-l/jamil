@@ -53,7 +53,7 @@ const projects = [
     },
 ];
 
-function ProjectCard({ project, index }: { project: typeof projects[0], index: number }) {
+function ProjectCard({ project }: { project: typeof projects[0], index: number }) {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
