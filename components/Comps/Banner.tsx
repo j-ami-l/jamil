@@ -8,7 +8,7 @@ function Banner() {
         <div className='w-11/12 mx-auto min-h-screen mt-35'>
             <div className='relative flex items-center justify-center min-h-[300px] md:min-h-[400px] lg:min-h-[500px]'>
 
-                <div className='absolute inset-0 hidden md:flex items-center justify-center'>
+                <div className='absolute inset-0 flex items-center justify-center'>
                     <SparklesPreview />
                 </div>
                 

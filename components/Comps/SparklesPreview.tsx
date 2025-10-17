@@ -32,7 +32,7 @@ export function SparklesPreview() {
                 <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
 
                 {/* Custom Sparkles with Framer Motion */}
-                <div className="w-full h-full relative">
+                <div className="hidden md:block w-full h-full relative">
                     {sparkles.map((sparkle) => (
                         <motion.div
                             key={sparkle.id}
