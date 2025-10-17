@@ -5,7 +5,7 @@ import Image from "next/image";
 import meee from '../../public/me.png'
 export function SparklesPreview() {
     return (
-        <div className="flex flex-col items-center mx-auto justify-center overflow-hidden rounded-md">
+        <div className="flex flex-col w-11/12 mx-auto items-center justify-center overflow-hidden rounded-md">
             <div>
                 <Image
                     className='w-[300px]'

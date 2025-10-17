@@ -51,8 +51,8 @@ function Contact() {
     };
 
     return (
-        <div className='w-full py-20 bg-gradient-to-b from-black via-gray-900 to-black'>
-            <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='mx-auto py-20'>
+            <div className='mx-auto px-4 sm:px-6 lg:px-8'>
                 {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
@@ -72,14 +72,14 @@ function Contact() {
                     </p>
                 </motion.div>
 
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-15 items-center'>
                     {/* Animated Image Section */}
                     <motion.div
-                        initial={{ opacity: 0, x: -50 }}
+                        initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className='relative order-2 lg:order-1'
+                        className='relative  order-2 lg:order-1'
                     >
                         <div className='relative'>
                             {/* Animated Background Blobs */}
@@ -93,7 +93,7 @@ function Contact() {
                                     repeat: Infinity,
                                     ease: "easeInOut"
                                 }}
-                                className='absolute top-0 left-0 w-72 h-72 bg-indigo-500/30 rounded-full blur-3xl'
+                                className='absolute top-0 left-2 hidden md:block md:w-72 md:h-72 bg-indigo-500/30 rounded-full blur-3xl'
                             />
                             <motion.div
                                 animate={{
@@ -106,7 +106,7 @@ function Contact() {
                                     ease: "easeInOut",
                                     delay: 1
                                 }}
-                                className='absolute bottom-0 right-0 w-72 h-72 bg-purple-500/30 rounded-full blur-3xl'
+                                className='absolute bottom-0 right-2 hidden md:block md:w-72 md:h-72 bg-purple-500/30 rounded-full blur-3xl'
                             />
 
                             {/* Contact Illustration */}
@@ -121,7 +121,7 @@ function Contact() {
                                 }}
                                 className='relative z-10 flex items-center justify-center'
                             >
-                                <div className='relative w-full max-w-md aspect-square'>
+                                <div className='relative  aspect-square'>
                                     {/* Animated Circles */}
                                     <motion.div
                                         animate={{
@@ -150,7 +150,7 @@ function Contact() {
                                                 repeat: Infinity,
                                                 ease: "easeInOut"
                                             }}
-                                            className='relative w-80 h-80 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-gray-700/50'
+                                            className='relative w-50 h-50  md:w-80 md:h-80 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-gray-700/50'
                                         >
                                             <FaEnvelope className='text-9xl text-indigo-400/60' />
                                             
