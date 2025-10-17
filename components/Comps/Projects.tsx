@@ -11,8 +11,7 @@ const projects = [
         title: "Doctor Appointment System",
         description: "A comprehensive healthcare platform for booking doctor appointments online. Features include real-time availability, patient management, appointment scheduling, and secure payment integration.",
         image: "/docweb.png",
-        link: "https://doctor-appointment-system.surge.sh/",
-        github: "https://github.com/jamil1001/doctor-appointment",
+        link: "https://e-doctor-sheva.netlify.app",
         tech: ["React", "Node.js", "MongoDB", "Tailwind CSS"]
     },
     {
@@ -20,35 +19,31 @@ const projects = [
         title: "English Learning Platform",
         description: "An interactive English learning web application with grammar lessons, vocabulary building, interactive quizzes, and progress tracking. Responsive design ensures learning on any device.",
         image: "/engweb.png",
-        link: "https://english-janala-web11-2729.surge.sh/",
-        github: "https://github.com/jamil1001/english-platform",
+        link: "https://english-janala-web11-2729.surge.sh",
         tech: ["Next.js", "React", "Tailwind CSS"]
     },
     {
         id: 3,
-        title: "Food Delivery Application",
-        description: "Full-stack food ordering platform with menu browsing, cart management, order tracking, payment integration, and admin dashboard. Optimized for performance.",
+        title: "Food Share Application",
+        description: "ShareBite is a community-driven web platform designed to combat food waste by connecting those with surplus food to those in need. This full-stack application provides a user-friendly interface for managing food donations and requests, fostering a more sustainable and compassionate community.",
         image: "/foodweb.png",
-        link: "https://food-delivery-app.surge.sh/",
-        github: "https://github.com/jamil1001/food-delivery",
+        link: "https://sharemeal.vercel.app",
         tech: ["React", "Node.js", "MongoDB", "Stripe"]
     },
     {
         id: 4,
         title: "Garden Management System",
-        description: "Plant management application with tracking, watering schedules, growth monitoring, and community sharing. Beautiful UI with care tips.",
+        description: "GardenBOOK is a vibrant gardening community and resource hub for plant lovers. This full-stack web application allows users to share garden tips, connect with other enthusiasts, explore gardeners, and more   all in a beautifully responsive and user-friendly platform.",
         image: "/gardenbook.png",
-        link: "https://gardenbook.surge.sh/",
-        github: "https://github.com/jamil1001/gardenbook",
+        link: "https://thegardenbook.netlify.app",
         tech: ["React", "Firebase", "Tailwind CSS"]
     },
     {
         id: 5,
         title: "Ghor - Real Estate Platform",
-        description: "Modern real estate platform with advanced search, virtual tours, mortgage calculators, and agent connections. Built with Next.js for optimal SEO.",
+        description: "A full-stack Building Management System (BMS) designed for managing a single building with role-based dashboards for users, members, and admins. The system provides apartment listings, agreement requests, payments with coupons, and admin-controlled announcements, all wrapped in a modern, responsive design.",
         image: "/ghor.png",
-        link: "https://ghor-realestate.surge.sh/",
-        github: "https://github.com/jamil1001/ghor",
+        link: "https://apnr-ghor.vercel.app",
         tech: ["Next.js", "React", "MongoDB", "Tailwind CSS"]
     },
 ];
@@ -98,15 +93,6 @@ function ProjectCard({ project }: { project: typeof projects[0], index: number }
                                     <FaExternalLinkAlt /> Live Demo
                                 </motion.button>
                             </Link>
-                            <Link href={project.github} target="_blank">
-                                <motion.button
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    className='px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-lg flex items-center gap-2 shadow-lg'
-                                >
-                                    <FaGithub /> Code
-                                </motion.button>
-                            </Link>
                         </div>
                     </div>
                 </motion.div>
@@ -153,15 +139,6 @@ function ProjectCard({ project }: { project: typeof projects[0], index: number }
                                 className='px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-semibold rounded-lg shadow-lg flex items-center gap-2'
                             >
                                 <FaExternalLinkAlt /> View Project
-                            </motion.button>
-                        </Link>
-                        <Link href={project.github} target="_blank">
-                            <motion.button
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                className='px-6 py-3 bg-transparent border-2 border-indigo-500 hover:bg-indigo-500/10 text-white font-semibold rounded-lg flex items-center gap-2'
-                            >
-                                <FaGithub /> Source Code
                             </motion.button>
                         </Link>
                     </div>

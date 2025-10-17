@@ -93,7 +93,7 @@ function Contact() {
                                     repeat: Infinity,
                                     ease: "easeInOut"
                                 }}
-                                className='absolute top-0 left-2 hidden md:block md:w-72 md:h-72 bg-indigo-500/30 rounded-full blur-3xl'
+                                className='absolute top-0 left-2 hidden  lg:w-72 lg:h-72 bg-indigo-500/30 rounded-full blur-3xl'
                             />
                             <motion.div
                                 animate={{
@@ -106,7 +106,7 @@ function Contact() {
                                     ease: "easeInOut",
                                     delay: 1
                                 }}
-                                className='absolute bottom-0 right-2 hidden md:block md:w-72 md:h-72 bg-purple-500/30 rounded-full blur-3xl'
+                                className='absolute bottom-0 right-2 hidden lg:block lg:w-72 md:h-72 bg-purple-500/30 rounded-full blur-3xl'
                             />
 
                             {/* Contact Illustration */}

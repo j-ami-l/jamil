@@ -9,19 +9,19 @@ function Footer() {
     const socialLinks = [
         {
             icon: FaGithub,
-            url: "https://github.com/jamil1001",
+            url: "https://github.com/j-ami-l",
             label: "GitHub",
             color: "#FFFFFF"
         },
         {
             icon: FaLinkedin,
-            url: "https://linkedin.com/in/jamil1001",
+            url: "https://www.linkedin.com/in/md-hasan-jamil-293506308",
             label: "LinkedIn",
             color: "#0A66C2"
         },
         {
             icon: FaXTwitter,
-            url: "https://twitter.com/jamil1001",
+            url: "#",
             label: "X (Twitter)",
             color: "#FFFFFF"
         }
